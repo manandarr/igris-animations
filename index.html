@@ -1,39 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Igris Animations Store</title>
-    <style>
-        body { background-color: #000; color: white; font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { padding: 20px; text-align: center; background: #111; }
-        h1 { margin: 0; font-size: 2em; }
-        .preview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
-        .preview { background: #1a1a1a; padding: 15px; border-radius: 10px; }
-        .preview video { width: 100%; border-radius: 10px; }
-        .preview button { background: white; color: black; padding: 10px; margin-top: 10px; width: 100%; border: none; border-radius: 5px; cursor: pointer; }
-        footer { background: #111; padding: 20px; text-align: center; font-size: 0.9em; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igris Animations Store</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #fff;
+    }
+    .preview-section {
+      margin: 40px 0;
+    }
+    video {
+      width: 90%;
+      max-width: 480px;
+      margin: 10px;
+      border: 2px solid #444;
+      border-radius: 10px;
+    }
+    .note, .payment {
+      margin-top: 30px;
+      font-size: 1rem;
+    }
+    a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Igris Animations</h1>
-        <p>High quality anime edit previews. Buy & download after payment.</p>
-    </header>
-    <section class="preview-grid">
-        <div class="preview">
-            <video src="preview1.mp4" controls></video>
-            <button onclick="alert('Pay via UPI: manandar613@okhdfcbank\nThen DM proof on Instagram.')">Buy ₹49</button>
-        </div>
-        <div class="preview">
-            <video src="preview2.mp4" controls></video>
-            <button onclick="alert('Pay via UPI: manandar613@okhdfcbank\nThen DM proof on Instagram.')">Buy ₹79</button>
-        </div>
-    </section>
-    <footer>
-        Contact us on <a href="https://www.instagram.com/hidestaranime" style="color:#4af;">Instagram</a> or <a href="https://youtube.com/@hide-star-anime" style="color:#4af;">YouTube</a><br>
-        UPI: manandar613@okhdfcbank
-    </footer>
+
+  <h1>Igris Animations</h1>
+  <p>Watch previews & buy premium anime edits</p>
+
+  <div class="preview-section">
+    <h2>🎬 Horizontal Previews</h2>
+    <video controls src="h1.mp4"></video>
+    <video controls src="h2.mp4"></video>
+    <video controls src="h3.mp4"></video>
+    <video controls src="h4.mp4"></video>
+    <video controls src="h5.mp4"></video>
+  </div>
+
+  <div class="preview-section">
+    <h2>📱 Vertical Previews (YouTube Shorts)</h2>
+    <video controls src="v1.mp4"></video>
+    <video controls src="v2.mp4"></video>
+    <video controls src="v3.mp4"></video>
+    <video controls src="v4.mp4"></video>
+    <video controls src="v5.mp4"></video>
+  </div>
+
+  <div class="note">
+    <p>💰 To buy any edit, pay via UPI and DM payment screenshot.</p>
+    <p><strong>UPI ID:</strong> manandar613@okhdfcbank</p>
+    <p><a href="https://www.instagram.com/hidestaranime" target="_blank">DM on Instagram</a> for payment proof or custom orders</p>
+  </div>
+
+  <div class="payment">
+    <p>After payment, you’ll receive a download link via DM.</p>
+    <p>Follow us: 
+      <a href="https://youtube.com/@hide-star-anime" target="_blank">YouTube</a> |
+      <a href="https://www.instagram.com/hidestaranime" target="_blank">Instagram</a>
+    </p>
+  </div>
+
 </body>
 </html>
